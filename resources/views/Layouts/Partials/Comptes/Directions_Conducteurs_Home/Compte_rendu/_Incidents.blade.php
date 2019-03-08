@@ -31,7 +31,7 @@
         {!!"</div>"!!}
 
         {!!"<div class='contenant-autre'>"!!}
-          {{$tab_incident_data[$i][0][1]}}
+          {{$tab_incident_data[$i][0][2]}}
         {!!"</div>"!!}
 
     {!!"</div>"!!}
