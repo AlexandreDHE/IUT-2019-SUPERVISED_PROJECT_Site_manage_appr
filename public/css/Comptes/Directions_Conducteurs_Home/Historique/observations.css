@@ -1,0 +1,65 @@
+.contenant-principal{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 3%;
+  padding-left: 4%;
+  margin-top: 2%;
+  margin-bottom: 1.5%;
+}
+
+.titre-accident{
+  text-align: center;
+  padding-top: 1%;
+  height:40px;
+  background: #e74c3c ;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.titre-panne{
+  text-align: center;
+  height:40px;
+  background: #f39c12 ;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.titre-autre{
+  text-align: center;
+  height:40px;
+  background: #f4d03f ;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.contenant{
+  font-size: 20px;
+  text-align: justify;
+}
+
+.contenant-accident{
+  margin-top: -0.75%;
+  padding: 3%;
+  border: 2px solid #e74c3c ;
+  background:  #fadbd8 ;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.contenant-panne{
+  margin-top: -1%;
+  padding: 3%;
+  border: 2px solid #f39c12;
+  background: #fae5d3 ;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.contenant-autre{
+  margin-top: -1%;
+  padding: 3%;
+  border: 2px solid #f4d03f;
+  background:#fcf3cf;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}

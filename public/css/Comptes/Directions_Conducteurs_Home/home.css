@@ -1,0 +1,227 @@
+body{
+  background-image:url();
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/*******************************************************************************/
+/* MENU CENTRE                                                                 */
+/*******************************************************************************/
+
+.center{
+  display: grid;
+  grid-template-columns: 100%;
+  width: 59%;
+  margin-left: 20.5%;
+  margin-top: -2px;
+  background-color:#ac2831;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right:2px solid black;
+  box-shadow: 0px 5px 5px black;
+  opacity:0.9;
+  z-index: 3;
+}
+
+.center-haut, .center-bas{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.center-center{
+  text-align: center;
+}
+
+ #center-center-icon{
+  color:white;
+  font-size: 90px;
+}
+
+/*******************************************************************************/
+/* MENU CENTRE -> BOUTONS                                                      */
+/*******************************************************************************/
+
+.center-haut-gauche, .center-haut-droite, .center-bas-gauche, .center-bas-droite {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  border: 3px solid black;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 80%;
+  z-index: 2;
+}
+
+.cbg-droite-text, .chg-droite-text, .chd-droite-text,.cbd-droite-text{
+  font-weight:normal;
+  color: black;
+  font-size: 20px;
+}
+
+.chg-gauche, .cbg-gauche, .chd-gauche, .cbd-gauche {
+  padding: 5%;
+  text-align:center;
+}
+
+.chg-droite, .cbg-droite, .chd-droite, .cbd-droite {
+  padding-top: 5%;
+  text-align:left;
+  font-size: 30px;
+  line-height:100%;
+  padding-bottom: 5%;
+}
+
+.chg-image, .cbg-image, .chd-image, .cbd-image {
+    width: 90%;
+    margin-top:5%;
+}
+
+/**********************/
+
+.center-haut-gauche{
+  background-color:#fcf3cf;
+  color: black;
+  margin-left: 5%;
+}
+
+.center-haut-gauche:hover {
+  opacity: 1;
+  border: 3px solid #ac2831;
+  color:#ac2831;
+}
+
+.center-haut-gauche:active {
+  transform: translateY(4px);
+}
+
+/**********************/
+
+.center-haut-droite {
+  background-color:#d4e6f1;
+  color: black;
+  margin-left: 15%;
+}
+
+.center-haut-droite:hover {
+  opacity: 1;
+  border: 3px solid #ac2831;
+  color:#ac2831;
+}
+
+.center-haut-droite:active {
+  transform: translateY(4px);
+}
+
+/**********************/
+/**********************/
+.Bouton_center {
+  cursor: pointer;
+	width:100px;
+	height:100px;
+	background:white;
+  line-height:100%;
+	border-radius:30%;
+	border: 3px solid black;
+	color:#ac2831;
+}
+
+.Bouton_center:hover {
+  opacity: 1;
+  background-color:#909497;
+  color: white;
+}
+/**********************/
+/**********************/
+
+.center-bas-gauche {
+  background-color: #d4efdf ;
+  color: black;
+  margin-left: 5%;
+}
+
+.center-bas-gauche:hover {
+  opacity: 1;
+  border: 3px solid #ac2831;
+  color:#ac2831;
+}
+
+.center-bas-gauche:active {
+  transform: translateY(4px);
+}
+
+/**********************/
+
+.center-bas-droite {
+  background-color: #f6ddcc ;
+  color: black;
+  margin-left: 15%;
+}
+
+.center-bas-droite:hover {
+  opacity: 1;
+  border: 3px solid #ac2831;
+  color:#ac2831;
+}
+
+.center-bas-droite:active {
+  transform: translateY(4px);
+}
+
+/*******************************************************************************/
+/* BOUTONS DU BAS                                                              */
+/*******************************************************************************/
+
+.bottom{
+  border-radius: 10px;
+  margin-top: 5%;
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.bottom-b1{
+  padding-top: 5%;
+  margin-left: 35%;
+  width: 30%;
+  border-radius: 10px;
+  margin: none;
+  color: grey;
+  background:white;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  border: 3px solid black;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.material-icons{
+}
+
+.bottom-b1-texte{
+  font-size: 20px;
+  text-align: center;
+}
+
+.bottom-b1:hover{
+  opacity: 1;
+  background-color: #ac2831;
+  color: white;
+}
+.bottom-b1:active{
+  transform: translateY(4px);
+  background-color: #ac2831;
+  color: white;
+}
+
+.bottom-img1{
+  margin-left: 35%;
+  text-align: center;
+	max-width: 30%;
+	height: auto;
+}

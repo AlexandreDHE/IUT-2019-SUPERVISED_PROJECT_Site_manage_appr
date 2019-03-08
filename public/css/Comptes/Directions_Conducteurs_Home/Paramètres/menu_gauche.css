@@ -1,0 +1,123 @@
+body{
+  background-image:url();
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.panel-primary>.panel-heading {
+    background-image: none;
+    width:100%;
+}
+
+.accordion-header{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.responsable, .conducteur{
+  font-weight: normal;
+}
+
+.panel-primary {
+  width:100%;
+}
+
+.email {
+  width:200px;
+}
+
+.text-primary {
+  padding: 5px;
+}
+
+.panel-title {
+  font-size: 30px;
+}
+
+* {box-sizing: border-box}
+
+.bloc_menu {
+  margin-top: 5%;
+}
+
+/* Style the tab */
+.navbar {
+  border-radius: 20px;
+  float: left;
+  margin-left: -1.5%;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 20%;
+  height: 400px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.navbar button {
+  margin-left: 2%;
+  display: block;
+  background-color: inherit;
+  padding: 22px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+  border-right:  2px solid #f1f1f1;
+}
+
+
+/* Create an active/current "tab button" class */
+button.active {
+  background-color: #ac2831;
+  color: white;
+  border-right:  2px solid #ac2831;
+}
+
+button:hover {
+  border-right:  2px solid #ac2831;
+  background-color:#ddd;
+  color: black;
+}
+
+button:after{
+  background-color:#f1f1f1;
+  border-right:  2px solid #f1f1f1;
+}
+
+
+.conducteur:hover{
+    background-color:#ddd;
+}
+
+.responsable:hover{
+    background-color:#ddd;
+}
+
+.conducteur.active{
+  background-color:#ddd;
+  color:#ac2831;
+}
+
+.responsable.active{
+  background-color:#ddd;
+  color:#ac2831;
+}
+
+
+
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  /*border: 1px solid #ccc;*/
+  width: 80%;
+  border-left: none;
+  display:none;
+}
+.active{
+  display:block;
+}

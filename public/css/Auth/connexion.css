@@ -1,0 +1,185 @@
+    .header_connexion {
+      position:fixed;
+      top: 0;
+      width: 100%;
+
+      background-image:url(http://transalp-renouvellement.fr/wp-content/uploads/2016/05/Untitled-7.png);
+      padding-top: 1.5%;
+      padding-bottom: 1%;
+      border-bottom: 3px solid white;
+      height:110px;
+    }
+
+    .header_connexion-right {
+      margin-right: 1.5%;
+      float: right;
+    }
+
+    .header_connexion-h1 {
+      margin-top: 4%;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      font-size:45px;
+      line-height: 20px;
+      color: white;
+    }
+
+    body{
+      background-image:url(http://dwarves.iut-fbleau.fr/~delahous/source_pt/chantier.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    .header_relative{
+      position: relative;
+      height: 110px;
+    }
+
+    .div1{
+      display: block;
+      padding-top:3%;
+      padding-bottom: 2%;
+      width: 100%;
+    }
+
+    .div1-1{
+      background-color: white;
+      width: 8%;
+      margin: auto;
+      margin-bottom: 2%;
+    }
+
+    .div1-1-img1{
+    	max-width: 100%;
+    	height: auto;
+    }
+
+    .div1-2{
+      font-size: 25px;
+      height: auto;
+      width: 30%;
+      margin: auto;
+      background: #f2f3f3;
+      opacity: 0.9;
+      border: 5px solid white;
+      padding: 2%;
+      border-radius: 20px;
+    }
+
+    .div1-2-text{
+    }
+
+    .div1-2-input{
+      border: 1px solid #982723;
+      border-radius: 6px;
+      width: 96%;
+      margin: auto;
+      margin-top: 0.5%;
+      padding: 1%;
+      font-size: 20px;
+      color:#982723;
+    }
+
+    .remember{
+      font-size:18px;
+    }
+
+    .div1-2-button{
+      width: 50%;
+      margin-top: 4%;
+      margin-left: 25%;
+      padding: 1%;
+      font-size: 25px;
+      color: white;
+      border-radius: 8px;
+      background-color: #982723;
+      border: 5px solid #982723;
+      transition-duration: 0.4s;
+    }
+
+    .div1-2-button:hover {
+      cursor:pointer;
+      border: 5px solid #009933;
+      background-color:#009933; /* Green */
+      color: white;
+    }
+
+    .div1-2-button:active {
+      background-color:#009933; /* Green */
+      color: white;
+
+    }
+
+    footer{
+      border-top: 3px solid white;
+      background-color: lightgray;
+      opacity: 0.9;
+      padding: 1%;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 0;
+    }
+
+    @media only screen and (max-width: 768px) { /* ipad portrait */
+
+      .div1{
+        padding-bottom: 30%;
+        background-color: red;
+      }
+
+      .div1-1{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        width: 20%;
+      }
+
+      .div1-2{
+        width: 65%;
+      }
+
+    } /* IPAD */
+
+    @media only screen and (max-width: 376px) { /* IPHONE X portrait */
+      font-size: 25px;
+
+      .div1{
+        padding-bottom: 67.5%;
+        background-color: red;
+      }
+
+      .div1-1{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        width: 26%;
+      }
+
+      .div-1-img1{
+        background-color: red;
+      }
+
+      .div1-2{
+        border: 4px solid white;
+        width: 80%;
+      }
+
+      .div1-2-text{
+        font-size: 18px;
+      }
+
+      .div1-2-input{
+        width: 94%;
+        margin: auto;
+        margin-top: 1%;
+        padding: 1%;
+        font-size: 15px;
+      }
+
+      .div1-2-button{
+        margin-top: 2%;
+        margin-bottom: 5%;
+        font-size: 18px;
+      }
+
+    }

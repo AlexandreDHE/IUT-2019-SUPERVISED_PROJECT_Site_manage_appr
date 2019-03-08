@@ -1,0 +1,114 @@
+.div1-2{
+  height: auto;
+  margin-top: 5%;
+  background: #f2f3f3;
+  opacity: 0.9;
+  border: 5px solid white;
+  padding: 0;
+  border-radius: 10px;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.div1-2-modif{
+  margin-top: 5%;
+  background: #f2f3f3;
+  opacity: 0.9;
+  border: 5px solid white;
+  padding: 0;
+  border-radius: 10px;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.div1-2-text{
+    padding-left: 3%;
+    font-size: 30px;
+}
+
+.div1-2-input{
+    width: 97%;
+    margin-top: -2%;
+    padding-left: 3%;
+    margin-bottom: 2%;
+}
+
+.gauche{
+  margin-bottom: 3%;
+}
+.droite{
+  text-align: center;
+}
+
+.panel-head {
+  border-radius: 10px 10px 0 0;
+  background-color: #ac2831 ;
+  width: 100%;
+  height: 65px;
+  margin: 0;
+  padding: 0;
+}
+
+.panel-body{
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.panel-body_modif{
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+
+.btn{
+  width: 50%;
+}
+
+.titre{
+  padding: 1%;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color:white;
+}
+.btn-primary {
+    margin: 5px;
+    background-color: #ac2831;
+    border-color: #ac2831;
+    margin-left: 35.5%;
+    width: 29%;
+    margin-bottom: 3%;
+}
+
+.btn-primary-modif {
+    margin-top: 40%;
+    background-color: #ac2831;
+    border-color: #ac2831;
+    width: 50%;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.btn-primary-modif-2 {
+    background-color: #ac2831;
+    border-color: #ac2831;
+    width: 50%;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.btn-primary:hover {
+    background-color: #951E26;
+    border-color: #951E26;
+}
+
+
+.btn-primary-modif:hover {
+    background-color: #951E26;
+    border-color: #951E26;
+}

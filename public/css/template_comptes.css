@@ -1,0 +1,79 @@
+.header_comptes {
+  display: grid;
+  grid-template-columns:60% 40%;
+  width: 100%;
+  background-image:url(http://transalp-renouvellement.fr/wp-content/uploads/2016/05/Untitled-7.png);
+  overflow: hidden;
+  border-bottom: 2px solid black;
+  box-shadow: 0px 5px 5px black;
+  opacity: 0.9;
+  height: 125px;
+  z-index: 1 ;
+}
+
+.header-left{
+  width:100%;
+  display: grid;
+  grid-template-rows:50% 50%;
+}
+
+.header-left-user{
+  margin-top: 1.5%;
+  margin-left: 2%;
+  font-weight: bold;
+  font-size: 45px;
+  color:white;
+}
+
+.header-left-fonction{
+  color: white;
+  margin-left: 2%;
+  font-size: 35px;
+}
+
+.header-right {
+  margin-left: 2%;
+  display: grid;
+  grid-template-columns: 30% 55% 15%;
+  width: 98%;
+}
+
+.header-right-date{
+  margin-top:40px;;
+  font-size: 40px;
+  text-align: right;
+  color:white;
+}
+
+.header-right-logout{
+  margin: none;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.header-right-logout:hover{
+  opacity: 1.0;
+  background: none;
+  color:white;
+}
+
+.header-right-home{
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.header-right-home:hover{
+  opacity: 1.0;
+  background: none;
+  color:white;
+}
+
+.material-icons{
+  font-size: 50px;
+}
