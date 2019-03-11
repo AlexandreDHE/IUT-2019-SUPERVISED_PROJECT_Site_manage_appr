@@ -36,6 +36,9 @@ Route::resource('user', 'ParamètresController');
 
 Route::get('/home/contacts', 'ContactsController@index')->name('contacts');
 
+Route::get('/home/formulaire', 'conducteur_travauxController@getView')->name('formulaire_conducteur');
+
+
 /***** Responsables *****/
 
 Route::post('/Resp_Consolidation_TBA', 'c_resp_conso_tbaController@sendData')->name('StoreData_conso_TBA');
