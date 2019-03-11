@@ -38,6 +38,8 @@ Route::get('/home/contacts', 'ContactsController@index')->name('contacts');
 
 Route::get('/home/formulaire', 'conducteur_travauxController@getView')->name('formulaire_conducteur');
 
+Route::get('//home/Dernier_Rapport/Téléchargement', 'compte_rendu_rapportController@export')->name('export');;
+
 
 /***** Responsables *****/
 

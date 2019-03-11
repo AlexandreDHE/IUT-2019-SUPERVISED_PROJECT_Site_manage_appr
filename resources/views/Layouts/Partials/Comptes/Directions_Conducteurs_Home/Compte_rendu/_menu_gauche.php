@@ -11,7 +11,8 @@
       <a href="#7" ><button class="menu_compte_rendu_rapport_boutton"> Libération</button></a>
       <a href="#8" ><button class="menu_compte_rendu_rapport_boutton"> Finitions</button></a>
       <a href="#9" ><button class="menu_compte_rendu_rapport_boutton"> Nivellement Complémentaire</button></a>
+      
+      <button class="menu_compte_rendu_rapport_boutton_excel" >Télécharger (Excel)</button>
 
-      <button class="menu_compte_rendu_rapport_boutton_excel">Télécharger (Excel)</button>
 
 </div>

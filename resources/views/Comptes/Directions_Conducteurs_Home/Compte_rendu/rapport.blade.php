@@ -9,10 +9,13 @@
 
 @section('content')
 
-    <!-- Menu sur le coté gauche de l'écran-->
-    @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_menu_gauche')
+    <form method="GET" action="{{route('export')}}" >
+        <!-- Menu sur le coté gauche de l'écran-->
+        @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_menu_gauche')
+    </form>
 
     <?php $cpt=-1; ?>
+
 
     <div class = "compte_rendu-center">
 
@@ -25,7 +28,6 @@
                   @if( $i === 0 )
 
                       {!!"<div class='compte_rendu_part'>"!!}
-
                       {!!"<div class='compte_rendu-center-titre'>"!!}
                       {!!"<h1 id='1' class='compte_rendu-center-titre-h1'> Consolidation TBA</h1>"!!}
                       {!!"<h1 class='compte_rendu-center-titre-p'>"!!}<?php echo date("d/m/Y à H:i:s", strtotime($tab_avancement_data[$i][0][3])) ?>{!!"</h1>"!!}
