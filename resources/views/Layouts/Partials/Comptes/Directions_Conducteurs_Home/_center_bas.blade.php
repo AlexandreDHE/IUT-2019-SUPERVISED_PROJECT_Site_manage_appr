@@ -40,12 +40,6 @@
 
     <img class="bottom-img1" src="http://www.tarbes-expos.com/Fichiers/agenda/122846logo_transalp.jpg" alt="Logo">
 
-    <button class="bottom-b1"><i class="material-icons">local_phone</i></button>
+    <button class="bottom-b1" formaction="{{route('contacts')}}" ><i class="material-icons">local_phone</i></button>
     <button class="bottom-b1"><i class="material-icons">info</i></button>
-
-    <p class="bottom-b1-texte"> Notifications </p>
-    <p class="bottom-b1-texte"> Comptes </p>
-    <p>   </p>
-    <p class="bottom-b1-texte"> Contact </p>
-    <p class="bottom-b1-texte"> Informations </p>
 </div>

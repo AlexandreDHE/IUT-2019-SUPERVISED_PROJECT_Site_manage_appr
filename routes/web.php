@@ -34,6 +34,8 @@ Route::post('/home/Historique/Observations', 'compte_rendu_rapportController@sho
 Route::get('/home/paramètres', 'ParamètresController@index')->name('paramètres');
 Route::resource('user', 'ParamètresController');
 
+Route::get('/home/contacts', 'ContactsController@index')->name('contacts');
+
 /***** Responsables *****/
 
 Route::post('/Resp_Consolidation_TBA', 'c_resp_conso_tbaController@sendData')->name('StoreData_conso_TBA');
