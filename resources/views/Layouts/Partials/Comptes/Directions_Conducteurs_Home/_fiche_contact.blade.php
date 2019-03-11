@@ -23,7 +23,7 @@
 										 <td class="div-centre-foreach-nom">{{$user->prénom}}</td>
                      <td class="div-centre-foreach-email">{{$user->fonction}}</td>
                      <td class="div-centre-foreach-email"><a href="mailto:{{$user->email}}">{{$user->email}}</a></td>
-										 <td class="div-centre-foreach-fonctions"><a href='{!!"$user->num_tel"!!}'>{{$user->num_tel}}</a></td>
+										 <td class="div-centre-foreach-fonctions"><a href='tel:{!!"$user->num_tel"!!}'>{{$user->num_tel}}</a></td>
  									</tr>
 									@endforeach
 
