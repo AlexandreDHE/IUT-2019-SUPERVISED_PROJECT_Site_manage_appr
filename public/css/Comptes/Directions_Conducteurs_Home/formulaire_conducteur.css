@@ -3,34 +3,9 @@
 /*******************************************************************************/
 
 .center{
-  display: grid;
-  grid-template-columns: 100%;
-  width: 59%;
-  margin-left: 20.5%;
-  margin-top: -2px;
-  background-color:#ac2831;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right:2px solid black;
-  box-shadow: 0px 5px 5px black;
-  opacity:0.9;
-  z-index: 3;
-}
-
-.center-haut, .center-bas{
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.center-center{
-  text-align: center;
-}
-
- #center-center-icon{
-  color:white;
-  font-size: 90px;
+  margin-top: 2.5%;
+  margin-left: 12.5%;
+  width: 80%;
 }
 
 
@@ -38,13 +13,12 @@
 /* EN TETE - RAPPORT CHANTIER ...                                              */
 /*******************************************************************************/
 
-
-
 .top{
   display: grid;
   grid-template-columns: 30% 70%;
   margin-top: 1.5%;
-  margin-left: 12.5%;
+  margin-left: 10%;
+  margin-bottom: 2%;
   width: 80%;
   color: black;
   margin-top:2%;
@@ -56,12 +30,22 @@
   box-shadow: 0px 5px 5px black;
   opacity:0.9;
   z-index: 3;
+  width: 80%;
 }
 
 .top-gauche{
   padding-left: 2%;
   border-right:3px solid black;
   background-color: #f6ddcc/*#d4e6f1*/;
+}
+
+
+
+.top-input{
+  margin: 1%;
+  background-color: #f6ddcc;
+  border: none;
+  font-size: 150%;
 }
 
 .top-droite{
@@ -72,221 +56,8 @@
 
 
 /*******************************************************************************/
-
-
-.menu{
-  margin-top: 1%;
-  position: fixed;
-  display: block;
-  width: 10%;
-}
-
-.bottom{
-  margin-left: -4%;
-  width: 100%;
-  display: grid;
-  grid-template-rows: 20% 20% 20% 20% 20%;
-}
-
-.bottom-b1{
-  width: 50%;
-  border-radius: 10px;
-  margin-bottom: 3%;
-  color: grey;
-  background:white;
-  border: none;
-  font-size: 70px;
-  cursor: pointer;
-  border: 3px solid black;
-  cursor: pointer;
-  opacity: 0.9;
-
-}
-
-.bottom-b1:hover{
-  opacity: 1;
-  background-color: #ac2831;
-  color: white;
-}
-.bottom-b1:active{
-  transform: translateY(4px);
-  background-color: #ac2831;
-  color: white;
-}
-
-/*******************************************************************************/
-/* MENU CENTRE -> BOUTONS                                                      */
-/*******************************************************************************/
-
-.center-haut-gauche, .center-haut-droite, .center-bas-gauche, .center-bas-droite {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  border: 3px solid black;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 10px;
-  text-decoration: none;
-  cursor: pointer;
-  width: 80%;
-}
-
-.cbg-droite-text, .chg-droite-text, .chd-droite-text,.cbd-droite-text{
-  margin-top: 2%;
-  font-weight:normal;
-  color: black;
-  font-size: 18px;
-}
-
-.chg-gauche, .cbg-gauche, .chd-gauche, .cbd-gauche {
-  padding: 5%;
-  text-align:center;
-}
-
-.chg-droite, .cbg-droite, .chd-droite, .cbd-droite {
-  padding: 5%;
-  text-align:left;
-}
-
-.chg-image, .cbg-image, .chd-image, .cbd-image {
-  margin-top: 7%;
-  width: 60%;
-  border: 2px solid white;
-  border-radius: 15px;
-}
-
-/**********************/
-
-.center-haut-gauche{
-  background-color:#fcf3cf;
-  color: black;
-  margin-left: 5%;
-}
-
-.center-haut-gauche:hover {
-  opacity: 1;
-  background-color: #909497 ;
-  color: white;
-}
-
-.center-haut-gauche:active {
-  transform: translateY(4px);
-}
-
-/**********************/
-
-.center-haut-droite {
-  background-color:#d4e6f1;
-  color: black;
-  margin-left: 15%;
-}
-
-.center-haut-droite:hover {
-  opacity: 1;
-  background-color:#909497 ;
-  color: white;
-}
-
-.center-haut-droite:active {
-  transform: translateY(4px);
-}
-
-/**********************/
-
-.center-bas-gauche {
-  background-color: #d4efdf ;
-  color: black;
-  margin-left: 5%;
-}
-
-.center-bas-gauche:hover {
-  opacity: 1;
-  background-color:#909497;
-  color: white;
-}
-
-.center-bas-gauche:active {
-  transform: translateY(4px);
-}
-
-/**********************/
-
-.center-bas-droite {
-  background-color: #f6ddcc ;
-  color: black;
-  margin-left: 15%;
-}
-
-.center-bas-droite:hover {
-  opacity: 1;
-  background-color:#909497;
-  color: white;
-}
-
-.center-bas-droite:active {
-  transform: translateY(4px);
-}
-
-.Bouton_center {
-  cursor: pointer;
-	width:200px;
-	height:200px;
-	background:grey;
-	font:bold 13px Arial;
-	border-radius:50%;
-	border: 3px solid black;
-  font-size: 30px;
-	color:white;
-}
-
-.Bouton_center:hover {
-  opacity: 1;
-  background-color:#5A5E6B;
-}
-
-/*******************************************************************************/
 /* BOUTONS DU BAS                                                              */
 /*******************************************************************************/
-
-.bottom{
-  margin-top: 7%;
-  width: 80%;
-  margin-left: 10%;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
-.bottom-b1{
-  margin-left: 35%;
-  width: 30%;
-  border-radius: 10px;
-  margin: none;
-  color: grey;
-  background:white;
-  border: none;
-  font-size: 70px;
-  cursor: pointer;
-  border: 3px solid black;
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-.bottom-b1:hover{
-  opacity: 1;
-  background-color: #ac2831;
-  color: white;
-}
-.bottom-b1:active{
-  transform: translateY(4px);
-  background-color: #ac2831;
-  color: white;
-}
-
-.bottom-img1{
-  margin-left: 35%;
-  text-align: center;
-	max-width: 30%;
-	height: auto;
-}
 
 .container {
   display: inline-block;
@@ -365,6 +136,8 @@
 
 .tab_text{
   background-color:#ac2831;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .tab_text_1{
@@ -384,20 +157,23 @@
 
 .text-titre-tab{
   text-align: center;
-  width: 100%;
-  background: grey ;
+  background: #b2babb;
   color: black;
   border:2px solid black;
   font-size: 25px;
   padding-top: 1%;
   padding-bottom: 1%;
+  border-radius: 10px;
+  margin-left: 10%;
+  width: 80%;
 }
 
 .obs{
-  width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
   margin-top: 2%;
-  height: 25%;
+  margin-bottom: 5%;
+  height: 100px;
   background-color: darkgrey;
   opacity: 0.75;
   border: 1px grey solid;
@@ -412,20 +188,25 @@
   border-radius: 10px;
 }
 
+.obs_input::placeholder{
+  color: black;
+}
+
 /* Css pour les tableau */
 
 table {
   margin-top: 2%;
   margin-bottom: 3%;
-  margin-left: 3%;
+  margin-left: 10%;
   margin-right: 3%;
   color: white;
-  width: 100%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   opacity: 0.9;
   font-size: 20px;
   background-color: red;
+
 }
 table, th, td {
   border: 2px solid black;
@@ -450,14 +231,14 @@ input{
 
 .text-titre-tab-incident{
   text-align: center;
-  width: 100%;
-  background: grey ;
+  background: #b2babb;
   color: black;
   border:2px solid black;
   font-size: 25px;
   padding-top: 1%;
   padding-bottom: 1%;
-  margin-top: 2%;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .type_incident{
@@ -469,6 +250,7 @@ input{
 
 .cont_meteo{
   display: grid;
-  grid-template-columns: 18.5% 18.5% 18.5% 18.5% 18.5%;
+  margin-left: 10%;
+  grid-template-columns: 17% 17% 17% 17% 17%;
   text-align: center;
 }

@@ -200,3 +200,17 @@ input{
   font-size: 30px;
   font-weight: bold;
 }
+
+
+/*********** CONDUCTEUR DE TRAVAUX ***************/
+
+.cont_meteo{
+  display: grid;
+  margin-left: 10%;
+  grid-template-columns: 17% 17% 17% 17% 17%;
+  text-align: center;
+}
+
+.tab_text-petit{
+    padding-left: 2%;
+}
