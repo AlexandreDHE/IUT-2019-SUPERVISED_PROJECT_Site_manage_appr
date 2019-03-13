@@ -8,6 +8,7 @@
       padding-bottom: 1%;
       border-bottom: 3px solid white;
       height:110px;
+      z-index: 6;
     }
 
     .header_connexion-right {
@@ -56,6 +57,7 @@
     }
 
     .div1-2{
+      z-index: 1;
       font-size: 25px;
       height: auto;
       width: 30%;
