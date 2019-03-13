@@ -117,9 +117,31 @@
                         $tab_avancement->save();
                     }
                 }
-            }
-        }
+            }elseif ($type[0] === 3 ) {
 
+              for ($j = 0; $j<$type[1]; $j++){
+                if($j === 0 || $j === 1 ){
+                  $tab_avancement = new Tab_avancement;
+                  $tab_avancement->Id = $id;
+                  $tab_avancement->Voie = 1 ;
+                  $tab_avancement->TauxConduc = $request->input('tab_avancement.'.$j.'.0');
+                  $tab_avancement->PkD = $request->input('tab_avancement.'.$j.'.1');
+                  $tab_avancement->PkF = $request->input('tab_avancement.'.$j.'.2');
+                  $tab_avancement->NumLigne = $j+1;
+                  $tab_avancement->save();
+                }elseif ($j === 2|| $j === 3 ){
+                  $tab_avancement = new Tab_avancement;
+                  $tab_avancement->Id = $id;
+                  $tab_avancement->Voie = 2 ;
+                  $tab_avancement->TauxConduc = $request->input('tab_avancement.'.$j.'.0');
+                  $tab_avancement->PkD = $request->input('tab_avancement.'.$j.'.1');
+                  $tab_avancement->PkF = $request->input('tab_avancement.'.$j.'.2');
+                  $tab_avancement->NumLigne = $j+1;
+                  $tab_avancement->save();
+              }
+            }
+          }
+        }
 
         public function save_data_tab_materiels($id , $request, $type)
         {

@@ -32,10 +32,14 @@ class conducteur_travauxController extends Controller
       $profil = $bd_transactions->user_info($id); // Instanciation des informations de l'utilisateur dans le tableau.
 
       $type = array(); // Tableau contenant les caractéristiques des formulaires.
-      $type[0]=0; // Formulaire d'Avancement "BASIQUE" donc 0.
-      $type[1]=4; // Le formulaire d'Avancement dispose de 2 lignes.
+      $type[0]=3; // Formulaire d'Avancement "CONDUCTEUR"
+      $type[1]=4; // Le formulaire d'Avancement dispose de 4 lignes.
 
+      $bd_transactions->save_data_tab_avancements($id, $request, $type);
+
+      $type[1]=4; // Le formulaire dispose de 2 lignes.
       $bd_transactions->save_data_tab_interception($id, $request, $type);
+
       $data_historique = $bd_transactions->get_historique_rapports();
 
       return view('Comptes/Responsables/après_validation')->with('profil', $profil);
