@@ -9,10 +9,9 @@
 
 @section('content')
 
-    <form method="GET" action="{{route('export')}}" >
         <!-- Menu sur le coté gauche de l'écran-->
         @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_menu_gauche')
-    </form>
+
 
     <?php $cpt=-1; ?>
 
