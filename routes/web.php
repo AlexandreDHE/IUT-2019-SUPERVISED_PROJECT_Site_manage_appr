@@ -52,3 +52,7 @@ Route::post('/Resp_Pépa_Coupe', 'c_resp_prepa_coupeController@sendData')->name(
 Route::post('/Resp_Pépa_Deg', 'c_resp_prepa_degController@sendData')->name('StoreData_prepa_deg');
 Route::post('/Resp_Relevage', 'c_resp_relevageController@sendData')->name('StoreData_relevage');
 Route::post('/Resp_Substitution', 'c_resp_substitutionController@sendData')->name('StoreData_substitution');
+
+
+
+Route::post('/Conducteur_travaux', 'conducteur_travauxController@sendData')->name('StoreData_conducteur');

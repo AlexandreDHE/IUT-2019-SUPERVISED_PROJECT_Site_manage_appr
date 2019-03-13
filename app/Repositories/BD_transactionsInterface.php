@@ -15,6 +15,7 @@ interface BD_transactionsInterface
     public function save_data_tab_wagons($id , $request, $type);
     public function save_data_tab_horaires_sds($id , $request, $type);
     public function save_data_tab_incidents($id , $request, $type);
+    public function save_data_tab_interception($id , $request, $type);
 
     /* store */
 

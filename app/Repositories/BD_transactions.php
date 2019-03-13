@@ -10,6 +10,7 @@
     use App\Models\Tab_wagon;
     use App\Models\Tab_horaires_sd;
     use App\Models\Tab_incident;
+    use App\Models\Tab_conducteur;
 
      /**
        *
@@ -248,6 +249,68 @@
                 $tab_incident->Autres = $request->input('Autres');
             }
             $tab_incident->save();
+        }
+
+
+
+        public function save_data_tab_interception ($id , $request, $type)
+        {
+              for ($j= 0; $j<$type[1]; $j++){
+
+                if($j===0){
+
+                  $tab_conducteur = new Tab_conducteur;
+                  $tab_conducteur->Id = $id;
+                  $tab_conducteur->InterCat  = "Interception";
+                  $tab_conducteur->Voie  = 1;
+                  $tab_conducteur->HDepT = $request->input('tab_interception.'.$j.'.0');
+                  $tab_conducteur->HFinT = $request->input('tab_interception.'.$j.'.1');
+                  $tab_conducteur->HDepR  = $request->input('tab_interception.'.$j.'.2');
+                  $tab_conducteur->HFinR = $request->input('tab_interception.'.$j.'.3');
+                  $tab_conducteur->NumLigne = $j+1;
+                  $tab_conducteur->save();
+
+                }elseif ($j===1) {
+
+                  $tab_conducteur = new Tab_conducteur;
+                  $tab_conducteur->Id = $id;
+                  $tab_conducteur->InterCat  = "Caténaire";
+                  $tab_conducteur->Voie  = 1;
+                  $tab_conducteur->HDepT = $request->input('tab_interception.'.$j.'.0');
+                  $tab_conducteur->HFinT = $request->input('tab_interception.'.$j.'.1');
+                  $tab_conducteur->HDepR  = $request->input('tab_interception.'.$j.'.2');
+                  $tab_conducteur->HFinR = $request->input('tab_interception.'.$j.'.3');
+                  $tab_conducteur->NumLigne = $j+1;
+                  $tab_conducteur->save();
+
+                }elseif ($j===2) {
+
+                  $tab_conducteur = new Tab_conducteur;
+                  $tab_conducteur->Id = $id;
+                  $tab_conducteur->InterCat  = "Interception";
+                  $tab_conducteur->Voie  = 2 ;
+                  $tab_conducteur->HDepT = $request->input('tab_interception.'.$j.'.0');
+                  $tab_conducteur->HFinT = $request->input('tab_interception.'.$j.'.1');
+                  $tab_conducteur->HDepR  = $request->input('tab_interception.'.$j.'.2');
+                  $tab_conducteur->HFinR = $request->input('tab_interception.'.$j.'.3');
+                  $tab_conducteur->NumLigne = $j+1;
+                  $tab_conducteur->save();
+
+                }elseif ($j===3){
+
+                  $tab_conducteur = new Tab_conducteur;
+                  $tab_conducteur->Id = $id;
+                  $tab_conducteur->InterCat  = "Caténaire";
+                  $tab_conducteur->Voie  = 2;
+                  $tab_conducteur->HDepT = $request->input('tab_interception.'.$j.'.0');
+                  $tab_conducteur->HFinT = $request->input('tab_interception.'.$j.'.1');
+                  $tab_conducteur->HDepR  = $request->input('tab_interception.'.$j.'.2');
+                  $tab_conducteur->HFinR = $request->input('tab_interception.'.$j.'.3');
+                  $tab_conducteur->NumLigne = $j+1;
+                  $tab_conducteur->save();
+
+               }
+            }
         }
 
     /****************************************************************************************/
@@ -1312,7 +1375,7 @@
               for($i = 0; $i<$cpt; $i++){
                   $i;
                   $save_date = $resulat[$i][0];
-                  
+
                   $resulat[$i][0] = date("H:i:s", strtotime($resulat[$i][0]));
 
                   if( $resulat[$i][0] >= date("20:00:00") && $resulat[$i][0] < date("23:59:59") ){
