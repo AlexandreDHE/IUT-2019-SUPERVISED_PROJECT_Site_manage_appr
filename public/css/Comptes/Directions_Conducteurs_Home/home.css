@@ -1,5 +1,5 @@
 body{
-  background-image:url();
+  background-image:url('http://dwarves.iut-fbleau.fr/~delahous/source_pt/chantier.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -224,4 +224,82 @@ body{
   text-align: center;
 	max-width: 30%;
 	height: auto;
+}
+
+
+
+/*****************************************************************************************/
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+  .center{
+    margin-left: 2.5%;
+    width: 95%;
+
+  }
+
+  .center-haut-gauche, .center-haut-droite, .center-bas-gauche, .center-bas-droite {
+    padding-top: 1%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 3px solid black;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 80%;
+    z-index: 2;
+  }
+
+  .chg-image, .cbg-image, .chd-image, .cbd-image {
+      width: 90%;
+      margin-top:20%;
+  }
+
+  .chg-droite, .cbg-droite, .chd-droite, .cbd-droite {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align:left;
+    font-size: 22px;
+    line-height:100%;
+    padding-bottom: 15%;
+    padding-left: 2%;
+  }
+
+  .bottom{
+    border-radius: 10px;
+    margin-top: 40%;
+    width: 95%;
+    margin-left: 2.5%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+
+  .bottom-b1{
+    padding-top: 5%;
+    margin-left: 20%;
+    width: 60%;
+    border-radius: 10px;
+    margin: none;
+    color: grey;
+    background:white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    border: 3px solid black;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  .bottom-img1{
+    margin-left:20%;
+    text-align: center;
+  	max-width: 60%;
+  	height: auto;
+  }
+
+
+
 }

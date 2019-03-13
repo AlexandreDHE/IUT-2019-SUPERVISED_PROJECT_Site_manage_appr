@@ -77,3 +77,43 @@
 .material-icons{
   font-size: 50px;
 }
+
+
+
+
+/*******************************************************************************************/
+
+@media (min-width: 0px) and (max-width: 1024px) {
+
+  .header-left-fonction{
+    color: white;
+    margin-left: 2%;
+    font-size: 30px;
+  }
+
+  .header-left-user{
+    margin-top: 1.5%;
+    margin-left: 2%;
+    font-weight: bold;
+    font-size: 30px;
+    color:white;
+  }
+
+  .header-right-date{
+    margin-top:40px;
+    font-size: 30px;
+    text-align: right;
+    color:white;
+  }
+
+  .material-icons{
+    font-size: 35px;
+  }
+
+
+
+
+
+
+
+}
