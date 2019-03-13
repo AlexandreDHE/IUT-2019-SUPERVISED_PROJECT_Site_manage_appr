@@ -3,7 +3,7 @@
 <div class="center">
 
   <div class="center-haut">
-
+    <div>
     <button class="center-haut-gauche" formaction="{{route('showData_dernier_rapport')}}">
       <div class="chg-gauche">
         <img class="cbg-image" src="{{asset('css/images/DR.png')}}">
@@ -18,8 +18,9 @@
         </div>
       </div>
     </button>
+  </div>
 
-
+    <div>
     <button class="center-haut-droite" formaction="{{route('historique_rapports')}}">
       <div class="chd-gauche">
         <img class="cbg-image" src="{{asset('css/images/HR.png')}}">
@@ -32,5 +33,6 @@
         </div>
       </div>
     </button>
+  </div>
 
   </div>

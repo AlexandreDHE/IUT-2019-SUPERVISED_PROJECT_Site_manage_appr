@@ -231,75 +231,236 @@ body{
 /*****************************************************************************************/
 
 
-@media (min-width: 768px) and (max-width: 1536px) {
+@media screen and (max-width: 815px) {
+
 
 
   .center{
-    margin-left: 2.5%;
-    width: 95%;
-
+    width: 98%;
+    margin-left: 1%;
   }
 
-  .center-haut-gauche, .center-haut-droite, .center-bas-gauche, .center-bas-droite {
-    padding-top: 1%;
+  body{
+    background-image:url('http://dwarves.iut-fbleau.fr/~delahous/source_pt/chantier.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  /*******************************************************************************/
+  /* MENU CENTRE                                                                 */
+  /*******************************************************************************/
+
+  .center-haut, .center-bas{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 50% 50%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+
+  .center-center{
+    text-align: center;
+  }
+
+   #center-center-icon{
+    color:white;
+    font-size: 60px;
+  }
+
+  /*******************************************************************************/
+  /* MENU CENTRE -> BOUTONS                                                      */
+  /*******************************************************************************/
+
+  .center-haut-gauche, .center-haut-droite, .center-bas-gauche, .center-bas-droite {
+    padding-top:5%;
+    display: grid;
+    font-size: 18px;
+    grid-template-rows: 50% 50%;
     border: 3px solid black;
     font-weight: bold;
+    height: 110px;
     border-radius: 10px;
     text-decoration: none;
     cursor: pointer;
-    width: 80%;
+    width: 90%;
     z-index: 2;
   }
 
-  .chg-image, .cbg-image, .chd-image, .cbd-image {
-      width: 90%;
-      margin-top:20%;
+  .cbg-droite-text, .chg-droite-text, .chd-droite-text,.cbd-droite-text{
+    font-weight:normal;
+    color: black;
+    font-size: 15px;
+  }
+
+  .chg-gauche, .cbg-gauche, .chd-gauche, .cbd-gauche {
+    padding: 5%;
+    text-align:center;
+
   }
 
   .chg-droite, .cbg-droite, .chd-droite, .cbd-droite {
     padding-top: 5%;
-    padding-bottom: 5%;
     text-align:left;
-    font-size: 22px;
+    font-size: 20px;
     line-height:100%;
-    padding-bottom: 15%;
-    padding-left: 2%;
+    padding-bottom: 5%;
+    margin-left: -40%;
   }
+
+  .chg-image, .cbg-image, .chd-image, .cbd-image {
+    display: none;
+  }
+
+  /**********************/
+
+  .center-haut-gauche{
+    background-color:#fcf3cf;
+    width: 96%;
+    color: black;
+    margin-left: 3%;
+  }
+
+  .center-haut-gauche:hover {
+    opacity: 1;
+    border: 3px solid #ac2831;
+    color:#ac2831;
+  }
+
+  .center-haut-gauche:active {
+    transform: translateY(4px);
+  }
+
+  /**********************/
+
+  .center-haut-droite {
+    background-color:#d4e6f1;
+    color: black;
+    width: 95%;
+    margin-left: 2%;
+  }
+
+  .center-haut-droite:hover {
+    opacity: 1;
+    border: 3px solid #ac2831;
+    color:#ac2831;
+  }
+
+  .center-haut-droite:active {
+    transform: translateY(4px);
+  }
+
+  /**********************/
+  /**********************/
+  .Bouton_center {
+    cursor: pointer;
+  	width:100px;
+  	height:100px;
+  	background:white;
+    line-height:100%;
+  	border-radius:30%;
+  	border: 3px solid black;
+  	color:#ac2831;
+  }
+
+  .Bouton_center:hover {
+    opacity: 1;
+    background-color:#909497;
+    color: white;
+  }
+  /**********************/
+  /**********************/
+
+  .center-bas-gauche {
+    background-color: #d4efdf ;
+    width: 96%;
+    color: black;
+    margin-left: 3%;
+  }
+
+  .center-bas-gauche:hover {
+    opacity: 1;
+    border: 3px solid #ac2831;
+    color:#ac2831;
+  }
+
+  .center-bas-gauche:active {
+    transform: translateY(4px);
+  }
+
+  /**********************/
+
+  .center-bas-droite {
+    background-color: #f6ddcc ;
+    color: black;
+    width: 95%;
+    margin-left: 2%;
+  }
+
+  .center-bas-droite:hover {
+    opacity: 1;
+    border: 3px solid #ac2831;
+    color:#ac2831;
+  }
+
+  .center-bas-droite:active {
+    transform: translateY(4px);
+  }
+
+  /*******************************************************************************/
+  /* BOUTONS DU BAS                                                              */
+  /*******************************************************************************/
 
   .bottom{
     border-radius: 10px;
-    margin-top: 40%;
-    width: 95%;
-    margin-left: 2.5%;
+    margin-top: 25%;
+    width: 98%;
+    margin-left: 1%;
     display: grid;
+    font-size: 20px;
     grid-template-columns: 20% 20% 20% 20% 20%;
   }
 
   .bottom-b1{
     padding-top: 5%;
-    margin-left: 20%;
-    width: 60%;
+    margin-left: 10%;
+    width: 80%;
     border-radius: 10px;
     margin: none;
     color: grey;
     background:white;
     border: none;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     border: 3px solid black;
     cursor: pointer;
     opacity: 0.9;
   }
 
-  .bottom-img1{
-    margin-left:20%;
-    text-align: center;
-  	max-width: 60%;
-  	height: auto;
+  .material-icons{
+    font-size: 60px;
   }
 
+  .bottom-b1-texte{
+    font-size: 50px;
+    text-align: center;
+  }
 
+  .bottom-b1:hover{
+    opacity: 1;
+    background-color: #ac2831;
+    color: white;
+  }
+  .bottom-b1:active{
+    transform: translateY(4px);
+    background-color: #ac2831;
+    color: white;
+  }
+
+  .bottom-img1{
+    margin-top: 15%;
+    margin-left: 15%;
+    text-align: center;
+  	max-width: 70%;
+  	height: auto;
+  }
 
 }
