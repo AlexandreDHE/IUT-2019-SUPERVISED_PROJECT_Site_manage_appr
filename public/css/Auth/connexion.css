@@ -127,39 +127,42 @@
 
 /****************************************************************************************************************/
 
-@media (min-width: 768px) and (max-width: 1536px) {
+@media screen and (max-width: 815px) {
 
+  .header_connexion {
+    position:fixed;
+    top: 0;
+    width: 100%;
 
-
-  .div1-1{
-    margin-top: -12%;
-    margin-bottom: 15%;
-    background: red;
-  }
-
-  .div1-2{
-    width: 70%;
-    margin-top: 2%;
+    background-image:url(http://transalp-renouvellement.fr/wp-content/uploads/2016/05/Untitled-7.png);
+    padding-top: 5.5%;
+    padding-bottom: 1%;
+    border-bottom: 3px solid white;
+    height:110px;
   }
 
   .header_connexion-right {
-    float: center;
+      float:none;
   }
 
-}
-
-
-@media (min-width: 0px) and (max-width: 1536px) {
-
-
-
-  .div1-1{
-    margin-top: 10%;
-    width: 25%;
+  .header_connexion-h1 {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size:35px;
+    line-height: 20px;
+    color: white;
   }
 
-  .div1-2{
-    width: 75%;
-  }
+    .div1-1{
+      width: 30%;
+      margin-top:10%;
+      margin-bottom: 10%;
+    }
+
+    .div1-2{
+        width: 90%;
+    }
 
 }

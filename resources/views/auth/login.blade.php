@@ -71,12 +71,5 @@
 @endsection
 
 @section('footer')
-    <footer>
-
-      <div class="footer">
-        ©2019 Transalp-Renouvellement -
-        <a href="http://transalp-renouvellement.fr/mentions-legales/">Mentions Légales</a>
-      </div>
-
-    </footer>
+    
 @endsection
