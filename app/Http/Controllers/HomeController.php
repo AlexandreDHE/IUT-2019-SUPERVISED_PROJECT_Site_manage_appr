@@ -29,8 +29,8 @@ class HomeController extends Controller
     {
 
       date_default_timezone_set('Europe/Paris');
-      $time = date("Y-m-d H:i:s");
-      //$time = date("Y-m-d 23:00:s");
+      //$time = date("Y-m-d H:i:s");
+      $time = date("Y-m-d 23:00:s");
       $AJD20 = date("Y-m-d 20:00:00");
       $AJD8 = date("Y-m-d 08:00:00");
       $AJD00 = date("Y-m-d 00:00:00");
