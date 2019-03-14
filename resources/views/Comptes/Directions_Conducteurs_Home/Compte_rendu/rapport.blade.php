@@ -89,8 +89,12 @@
                       {!!"<h1 class='compte_rendu-center-titre-p'>"!!}<?php echo date("d/m/Y à H:i:s", strtotime($tab_avancement_data[$i][0][3])) ?>{!!"</h1>"!!}
                       {!!"</div>"!!}
 
+                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Horaires')
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Avancement')
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Materiel')
+                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Calage')
+                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Traction')
+
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Wagons') <!-- Peut etre pb -->
 
                       {!!"</div>"!!}
@@ -104,7 +108,7 @@
                       {!!"<h1 class='compte_rendu-center-titre-p'>"!!}<?php echo date("d/m/Y à H:i:s", strtotime($tab_avancement_data[$i][0][3])) ?>{!!"</h1>"!!}
                       {!!"</div>"!!}
 
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Avancement')
+                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Avancement_relevage')
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Materiel')
 
                       {!!"</div>"!!}
@@ -148,7 +152,7 @@
                       {!!"<h1 class='compte_rendu-center-titre-p'>"!!}<?php echo date("d/m/Y à H:i:s", strtotime($tab_avancement_data[$i][0][3])) ?>{!!"</h1>"!!}
                       {!!"</div>"!!}
 
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Avancement')
+                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Avancement_nivel_comple')
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Materiel')
 
 
