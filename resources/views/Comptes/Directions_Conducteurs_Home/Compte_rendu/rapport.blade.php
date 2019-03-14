@@ -75,10 +75,8 @@
                       {!!"</div>"!!}
 
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Avancement')
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Wagons')
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Materiel')
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Traction')
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Calage')
+                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Wagons') <!-- Peut etre pb -->
 
                       {!!"</div>"!!}
 
@@ -91,11 +89,9 @@
                       {!!"<h1 class='compte_rendu-center-titre-p'>"!!}<?php echo date("d/m/Y à H:i:s", strtotime($tab_avancement_data[$i][0][3])) ?>{!!"</h1>"!!}
                       {!!"</div>"!!}
 
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Horaires')
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Avancement')
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Wagons')
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Materiel')
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Traction')
+                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Wagons') <!-- Peut etre pb -->
 
                       {!!"</div>"!!}
 
@@ -107,6 +103,9 @@
                       {!!"<h1 id='6' class='compte_rendu-center-titre-h1'>Relevage</h1>"!!}
                       {!!"<h1 class='compte_rendu-center-titre-p'>"!!}<?php echo date("d/m/Y à H:i:s", strtotime($tab_avancement_data[$i][0][3])) ?>{!!"</h1>"!!}
                       {!!"</div>"!!}
+
+                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Avancement')
+                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Materiel')
 
                       {!!"</div>"!!}
 
@@ -134,9 +133,9 @@
                       {!!"</div>"!!}
 
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Avancement')
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Wagons')
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Materiel')
-                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Traction')
+                      @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Wagons') <!-- Peut etre pb -->
+
+                      <!-- ERREUUUUUUUUUURRRR materiel -->
 
                       {!!"</div>"!!}
 
@@ -151,6 +150,7 @@
 
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Avancement')
                       @include('Layouts/Partials/Comptes/Directions_Conducteurs_Home/Compte_rendu/_Materiel')
+
 
                       {!!"</div>"!!}
 

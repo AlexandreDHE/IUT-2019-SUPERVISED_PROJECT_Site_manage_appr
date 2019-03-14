@@ -20,7 +20,7 @@
         <div class = "center">
             @include('Layouts/Partials/Comptes/Responsables_Home/Tableaux/_horaires_substitution')
             @include('Layouts/Partials/Comptes/Responsables_Home/Tableaux/_avancement')
-            @@include('Layouts/Partials/Comptes/Responsables_Home/Tableaux/_wagons')
+            @include('Layouts/Partials/Comptes/Responsables_Home/Tableaux/_wagons')
             @include('Layouts/Partials/Comptes/Responsables_Home/Tableaux/_materiel')
             @include('Layouts/Partials/Comptes/Responsables_Home/_rapports_incidents')
         </div>
