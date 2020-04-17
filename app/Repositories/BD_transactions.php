@@ -30,8 +30,8 @@
             $user->create_by=0;
             $user->id=0;
             $user->nom='User';
-            $user->prénom='User';
-            $user->fonction='Direction';
+            $user->prénom='Conducteur_T';
+            $user->fonction='Conducteur_T';
             $user->email='user@gmail.com';
             $user->num_tel='0000000000';
             $user->password='$2y$10$ERuzucoasvus8cMhUvelFO2wb1Mj.QIRx5De3/l9USGyPqSQ12dGO';
