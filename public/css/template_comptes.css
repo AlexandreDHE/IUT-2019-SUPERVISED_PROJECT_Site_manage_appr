@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns:60% 40%;
   width: 100%;
-  background-image:url(http://transalp-renouvellement.fr/wp-content/uploads/2016/05/Untitled-7.png);
+  background-color: #982723;
   overflow: hidden;
   border-bottom: 2px solid black;
   box-shadow: 0px 5px 5px black;

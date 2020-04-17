@@ -14,6 +14,7 @@ class CreateUsersTable extends Migration
     public function up()
     {
       Schema::create('users', function (Blueprint $table) {
+          $table->integer('create_by')->default(null);
           $table->increments('id')->default(null);
           $table->string('nom')->default(null);
           $table->string('prénom')->default(null);
@@ -21,9 +22,9 @@ class CreateUsersTable extends Migration
           $table->string('email')->unique();
           $table->string('num_tel')->unique();
           $table->timestamp('email_verified_at')->nullable();
-          $table->string('password');
+          $table->string('password'); /*   $2y$10$QgM8VUrA1QiIYDt2rqe52eSGbDwbhntqeKgQL0I.prn7lP7HOv5jq */
           $table->string('etat_compte')->default('actif');
-          $table->rememberToken();
+          $table->rememberToken(); /*  wwsv2ddpWcpUVlbYuVXd6lmr4AFLAiB7g5iuGLteiLR34GgGcfvNeixIiJCn  */
           $table->timestamps();
       });
     }
