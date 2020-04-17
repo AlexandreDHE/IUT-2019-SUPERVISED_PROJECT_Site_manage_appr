@@ -25,6 +25,19 @@
             $this->user = $user;
         }
 
+        public function init(){
+            $user = new User;
+            $user->create_by=0;
+            $user->id=0;
+            $user->nom='User';
+            $user->prénom='User';
+            $user->fonction='Direction';
+            $user->email='user@gmail.com';
+            $user->num_tel='0000000000';
+            $user->password='$2y$10$ERuzucoasvus8cMhUvelFO2wb1Mj.QIRx5De3/l9USGyPqSQ12dGO';
+            $user->save();
+        }
+
         /**
           * Cette méthode permet de connaitre les informations de l'utilisateur, à savoir
           * son nom, son prénom et enfin ca fonction.

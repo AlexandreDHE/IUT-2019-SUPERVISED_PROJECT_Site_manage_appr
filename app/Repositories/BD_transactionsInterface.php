@@ -6,6 +6,8 @@ namespace App\Repositories;
  */
 interface BD_transactionsInterface
 {
+
+    public function init();
     public function user_info($id);
 
     /* save */
