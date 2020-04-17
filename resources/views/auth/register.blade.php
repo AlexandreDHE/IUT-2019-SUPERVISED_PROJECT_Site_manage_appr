@@ -93,7 +93,7 @@
           <!-- PASSWORD !-->
           <div>
               <label for="password" class="div1-2-text">{{ __('Mot de passe') }}</label>
-              <input id="password" type="password" class="div1-2-input" name="password" required>
+              <input id="password" type="text" class="div1-2-input" name="password" required>
 
               @if ($errors->has('password'))
                   <span class="invalid-feedback" role="alert">
@@ -106,7 +106,7 @@
           <!-- Confirmer PASSWORD !-->
           <div>
               <label for="password-confirm" class="div1-2-text">{{ __('Confirmer mot de passe') }}</label>
-              <input id="password-confirm" type="password" class="div1-2-input" name="password_confirmation" required>
+              <input id="password-confirm" type="text" class="div1-2-input" name="password_confirmation" required>
           </div>
 
           <br>

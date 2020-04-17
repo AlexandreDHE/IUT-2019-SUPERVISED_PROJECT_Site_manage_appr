@@ -29,7 +29,7 @@ class CreateTabHorairesSdsTable extends Migration
           $table->time('FinBourr')->default(null);
           $table->time('DepTTXChan')->default(null);
           $table->timestamp('Date');
-          $table->increments('Id')->default(null);
+          $table->integer('Id')->default(null);
       });
     }
 

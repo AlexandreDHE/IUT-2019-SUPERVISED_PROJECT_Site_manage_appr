@@ -43,8 +43,23 @@
       </div>
 
       <br>
-      <!-- EMAIL !-->
+     
+      <!-- TELEPHONE !-->
       <div>
+          <label for="num_tel" class="div1-2-text">{{ __('Tel') }}</label>
+          <input id="num_tel" type="text" class="div1-2-input" name="num_tel" value="{{ old('num_tel') }}" required>
+
+          @if ($errors->has('num_tel'))
+              <span class="invalid-feedback" role="alert">
+                  <strong>{{ $errors->first('num_tel') }}</strong>
+              </span>
+          @endif
+      </div>
+
+      <br>
+
+       <!-- EMAIL !-->
+       <div>
           <label for="email" class="div1-2-text">{{ __('E-Mail') }}</label>
           <input id="email" type="email" class="div1-2-input" name="email" value="{{ old('email') }}" required>
 
@@ -56,22 +71,11 @@
       </div>
 
       <br>
-      <!-- TELEPHONE !-->
-      <div>
-          <label for="num_tel" class="div1-2-text">{{ __('Tel') }}</label>
-          <input id="num_tel" type="text" class="div1-2-input" name="num_tel" value="{{ old('num_tel') }}" required>
-          @if ($errors->has('num_tel'))
-              <span class="invalid-feedback" role="alert">
-                  <strong>{{ $errors->first('num_tel') }}</strong>
-              </span>
-          @endif
-      </div>
-
-      <br>
+      
       <!-- PASSWORD !-->
       <div>
           <label for="password" class="div1-2-text">{{ __('Mot de passe') }}</label>
-          <input id="password" type="password" class="div1-2-input" name="password" required>
+          <input id="password" type="text" class="div1-2-input" name="password" required>
 
           @if ($errors->has('password'))
               <span class="invalid-feedback" role="alert">
@@ -84,7 +88,7 @@
       <!-- Confirmer PASSWORD !-->
       <div>
           <label for="password-confirm" class="div1-2-text">{{ __('Confirmer mot de passe') }}</label>
-          <input id="password-confirm" type="password" class="div1-2-input" name="password_confirmation" required>
+          <input id="password-confirm" type="text" class="div1-2-input" name="password_confirmation" required>
       </div>
 
       <br>

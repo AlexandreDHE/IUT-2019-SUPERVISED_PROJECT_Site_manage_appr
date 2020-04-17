@@ -18,7 +18,7 @@ class CreateTabMaterielsTable extends Migration
           $table->string('Fixe_or_renfort')->default(null);
           $table->integer('NumLigne')->default(null);
           $table->timestamp('Date');
-          $table->increments('Id')->default(null);
+          $table->integer('Id')->default(null);
       });
     }
 

@@ -17,13 +17,13 @@ class CreateTabAvancementsTable extends Migration
           $table->integer('Voie')->default(null);
           $table->integer('PkD')->default(null);
           $table->integer('PkF')->default(null);
-          $table->string('PhaseRelevage')->default(null);
-          $table->string('Finition')->default(null);
-          $table->string('TauxConduc')->default(null);
-          $table->string('PhaseNivel')->default(null);
-          $table->integer('NumLigne')->default(null);
+          $table->string('PhaseRelevage')->nullable();
+          $table->string('Finition')->nullable();
+          $table->string('TauxConduc')->nullable();
+          $table->string('PhaseNivel')->nullable();
+          $table->integer('NumLigne');
           $table->timestamp('Date');
-          $table->increments('Id')->default(null);
+          $table->integer('Id')->default(null);
       });
     }
 

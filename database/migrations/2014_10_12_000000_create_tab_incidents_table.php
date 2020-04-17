@@ -19,7 +19,7 @@ class CreateTabIncidentsTable extends Migration
           $table->longText('Pannes')->default(null);
           $table->longText('Autres')->default(null);
           $table->timestamp('Date');
-          $table->increments('Id')->default(null);
+          $table->integer('Id')->default(null);
       });
     }
 

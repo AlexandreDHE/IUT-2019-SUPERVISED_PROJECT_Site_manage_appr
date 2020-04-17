@@ -251,7 +251,6 @@
 
         public function save_data_tab_incidents($id , $request, $type){
             $tab_incident = new Tab_incident;
-            $tab_incident->Id = $id;
 
             if($request->input('Accidents') === null){
                 $tab_incident->Accidents = "RAS";
@@ -270,6 +269,7 @@
             }else {
                 $tab_incident->Autres = $request->input('Autres');
             }
+            $tab_incident->Id = $id;
             $tab_incident->save();
         }
 
