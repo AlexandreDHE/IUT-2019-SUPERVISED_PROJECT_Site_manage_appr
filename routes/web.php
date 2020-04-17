@@ -56,3 +56,6 @@ Route::post('/Resp_Substitution', 'c_resp_substitutionController@sendData')->nam
 
 
 Route::post('/Conducteur_travaux', 'conducteur_travauxController@sendData')->name('StoreData_conducteur');
+
+
+Route::get('/init', 'Init_Controller@index')->name('init');

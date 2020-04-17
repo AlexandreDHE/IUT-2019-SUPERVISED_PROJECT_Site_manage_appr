@@ -18,6 +18,7 @@ class CreateTabWagonsTable extends Migration
           $table->string('NbDemande')->default(null);
           $table->string('NbFournis')->default(null);
           $table->string('NbCharDechar')->default(null);
+          $table->integer('NumLigne')->default(null);
           $table->timestamp('Date');
           $table->integer('Id')->default(null);
       });
